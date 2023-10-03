@@ -66,4 +66,14 @@ function get_sqrt(x) {
 
 const sqrt_9 = get_sqrt(9);
 
-console.log(sqrt_9);
+// console.log(sqrt_9);
+
+// ------------------------------------------------------------------------------------------------------------------------------------------------
+
+// 재귀적으로 factorial 계산
+function get_fact_recursive(n) {
+  if (n > 1) return n * get_fact_recursive(n - 1);
+  return 1;
+}
+
+console.log(get_fact_recursive(4));
